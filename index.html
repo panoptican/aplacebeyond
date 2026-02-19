@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A PLACE BEYOND</title>
+    <style>
+        :root {
+            --page-bg: #0B0902;
+            --text-muted: #959588;
+            --radius-md: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: var(--page-bg);
+        }
+
+        a {
+            color: var(--text-muted);
+            background-color: var(--page-bg);
+            padding: 8px;
+            margin: 8px;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+        }
+
+        a:hover {
+            color: var(--page-bg);
+            background-color: var(--text-muted);
+        }
+
+        #bgVideo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            #bgVideo {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        #mp3Container {
+            position: fixed;
+            bottom: max(1px, env(safe-area-inset-bottom));
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px; /* Set a fixed width */
+            max-width: calc(100vw - 24px);
+            max-height: min(28vh, 220px);
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
+            padding: 10px;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .mp3Player {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            opacity: 0.75;
+        }
+
+        #mp3Container::-webkit-scrollbar {
+            width: 0; /* Remove scrollbar space */
+            background: transparent; /* Invisible scrollbar */
+        }
+
+        #mp3Container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    <video id="bgVideo" autoplay muted loop playsinline preload="metadata">
+        <source src="generativeBG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div id="mp3Container">
+        <!-- Repeat this block for each mp3 player you want to include -->
+        <audio controls controlsList="nodownload" class="mp3Player" preload="metadata" aria-label="Blackmoon audio player">
+            <source src="blackmoon.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- ... -->
+    </div>
+
+</body>
+</html>
