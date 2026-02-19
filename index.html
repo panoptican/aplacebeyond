@@ -62,8 +62,6 @@
             height: 100%;
             overflow: hidden;
             background: var(--page-bg);
-            color: var(--text-muted);
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         a {
@@ -88,47 +86,15 @@
             min-height: 100%;
             width: auto;
             height: auto;
-            z-index: -100;
+            z-index: 0;
             transform: translateX(-50%) translateY(-50%);
             object-fit: cover;
-        }
-
-        #intro {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
-            width: min(90vw, 520px);
-            padding: 14px 16px;
-            border: 1px solid rgba(149, 149, 136, 0.45);
-            border-radius: var(--radius-md);
-            background: rgba(11, 9, 2, 0.5);
-            backdrop-filter: blur(2px);
-        }
-
-        #intro h1 {
-            margin: 0;
-            font-size: clamp(1.25rem, 4vw, 1.9rem);
-            letter-spacing: 0.06em;
-        }
-
-        #intro p {
-            margin: 8px 0 0;
-            line-height: 1.4;
-            font-size: 0.95rem;
-            color: #c6c6ba;
         }
 
         @media (max-width: 768px) {
             #bgVideo {
                 width: auto;
                 height: 100%;
-            }
-
-            #intro {
-                top: 12px;
-                left: 12px;
-                padding: 10px 12px;
             }
         }
 
@@ -167,11 +133,6 @@
     </style>
 </head>
 <body>
-    <main id="intro" aria-label="Site introduction">
-        <h1>A PLACE BEYOND</h1>
-        <p>Ambient visuals and original music in a single-page listening space. Press play to listen to Blackmoon.</p>
-    </main>
-
     <video id="bgVideo" autoplay muted loop playsinline preload="metadata">
         <source src="generativeBG.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -183,10 +144,6 @@
             Your browser does not support the audio element.
         </audio>
     </div>
-
-    <noscript>
-        <p>A PLACE BEYOND includes an ambient video background and the track Blackmoon. If media does not play in your browser, open <a href="blackmoon.mp3">Blackmoon.mp3</a>.</p>
-    </noscript>
 
 </body>
 </html>
