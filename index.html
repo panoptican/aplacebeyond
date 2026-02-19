@@ -3,7 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A PLACE BEYOND</title>
+    <title>A PLACE BEYOND | Ambient Music Experience</title>
+    <meta name="description" content="A PLACE BEYOND is an immersive ambient music experience featuring cinematic visuals and the original track Blackmoon.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="theme-color" content="#0B0902">
+    <link rel="canonical" href="https://aplacebeyond.place/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A PLACE BEYOND">
+    <meta property="og:title" content="A PLACE BEYOND | Ambient Music Experience">
+    <meta property="og:description" content="An immersive ambient music experience featuring cinematic visuals and the original track Blackmoon.">
+    <meta property="og:url" content="https://aplacebeyond.place/">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="A PLACE BEYOND | Ambient Music Experience">
+    <meta name="twitter:description" content="An immersive ambient music experience featuring cinematic visuals and the original track Blackmoon.">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": "A PLACE BEYOND",
+                    "url": "https://aplacebeyond.place/",
+                    "description": "A PLACE BEYOND is an immersive ambient music experience featuring cinematic visuals and the original track Blackmoon."
+                },
+                {
+                    "@type": "MusicRecording",
+                    "name": "Blackmoon",
+                    "url": "https://aplacebeyond.place/",
+                    "encodingFormat": "audio/mpeg",
+                    "contentUrl": "https://aplacebeyond.place/blackmoon.mp3",
+                    "inAlbum": {
+                        "@type": "MusicAlbum",
+                        "name": "A PLACE BEYOND"
+                    },
+                    "byArtist": {
+                        "@type": "MusicGroup",
+                        "name": "A PLACE BEYOND"
+                    }
+                }
+            ]
+        }
+    </script>
     <style>
         :root {
             --page-bg: #0B0902;
@@ -21,6 +62,8 @@
             height: 100%;
             overflow: hidden;
             background: var(--page-bg);
+            color: var(--text-muted);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         a {
@@ -50,10 +93,42 @@
             object-fit: cover;
         }
 
+        #intro {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            width: min(90vw, 520px);
+            padding: 14px 16px;
+            border: 1px solid rgba(149, 149, 136, 0.45);
+            border-radius: var(--radius-md);
+            background: rgba(11, 9, 2, 0.5);
+            backdrop-filter: blur(2px);
+        }
+
+        #intro h1 {
+            margin: 0;
+            font-size: clamp(1.25rem, 4vw, 1.9rem);
+            letter-spacing: 0.06em;
+        }
+
+        #intro p {
+            margin: 8px 0 0;
+            line-height: 1.4;
+            font-size: 0.95rem;
+            color: #c6c6ba;
+        }
+
         @media (max-width: 768px) {
             #bgVideo {
                 width: auto;
                 height: 100%;
+            }
+
+            #intro {
+                top: 12px;
+                left: 12px;
+                padding: 10px 12px;
             }
         }
 
@@ -62,7 +137,7 @@
             bottom: max(1px, env(safe-area-inset-bottom));
             left: 50%;
             transform: translateX(-50%);
-            width: 300px; /* Set a fixed width */
+            width: 300px;
             max-width: calc(100vw - 24px);
             max-height: min(28vh, 220px);
             overflow-y: auto;
@@ -81,30 +156,37 @@
         }
 
         #mp3Container::-webkit-scrollbar {
-            width: 0; /* Remove scrollbar space */
-            background: transparent; /* Invisible scrollbar */
+            width: 0;
+            background: transparent;
         }
 
         #mp3Container {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
 <body>
+    <main id="intro" aria-label="Site introduction">
+        <h1>A PLACE BEYOND</h1>
+        <p>Ambient visuals and original music in a single-page listening space. Press play to listen to Blackmoon.</p>
+    </main>
+
     <video id="bgVideo" autoplay muted loop playsinline preload="metadata">
         <source src="generativeBG.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     
     <div id="mp3Container">
-        <!-- Repeat this block for each mp3 player you want to include -->
         <audio controls controlsList="nodownload" class="mp3Player" preload="metadata" aria-label="Blackmoon audio player">
             <source src="blackmoon.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <!-- ... -->
     </div>
+
+    <noscript>
+        <p>A PLACE BEYOND includes an ambient video background and the track Blackmoon. If media does not play in your browser, open <a href="blackmoon.mp3">Blackmoon.mp3</a>.</p>
+    </noscript>
 
 </body>
 </html>
