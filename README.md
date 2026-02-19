@@ -32,4 +32,9 @@ npx wrangler pages deploy . --project-name aplacebeyond
 ## GitHub + Cloudflare Auto Deploy
 
 Recommended production branch is `main`.
-When the Cloudflare Pages project is connected to GitHub, pushes to `main` trigger production deployments.
+GitHub Actions workflow is configured at `.github/workflows/deploy-cloudflare-pages.yml` to deploy on push to `main`.
+
+Set these repository secrets in GitHub:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
