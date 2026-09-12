@@ -17,6 +17,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="A PLACE BEYOND | Ambient Music Experience">
     <meta name="twitter:description" content="An immersive ambient music experience featuring cinematic visuals and the original track Blackmoon.">
+    <script defer src="https://analytics.spidleweb.net/script.js" data-website-id="c3ea9904-819a-438d-b822-db6eb63d431c"></script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -130,9 +131,24 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 <body>
+    <h1 class="visually-hidden">A Place Beyond | Ambient Music Experience</h1>
+
     <video id="bgVideo" autoplay muted loop playsinline preload="metadata">
         <source src="generativeBG.mp4" type="video/mp4">
         Your browser does not support the video tag.
