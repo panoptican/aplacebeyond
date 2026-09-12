@@ -1,0 +1,38 @@
+{
+  "base_url": "https://aplacebeyond.place",
+  "generated": "2026-09-12T02:01:01+00:00",
+  "link_check": {
+    "broken": 0,
+    "redirecting": 0,
+    "unique_targets": 0
+  },
+  "pages": {
+    "https://aplacebeyond.place/": {
+      "body_text": "A PLACE BEYOND | Ambient Music Experience Your browser does not support the video tag. Your browser does not support the audio element.",
+      "body_words": 23,
+      "broken_internal_links": [],
+      "canonical": "https://aplacebeyond.place/",
+      "content_hash": "390f18a80f7b206336803d2db8151b9445b2ab8b",
+      "date_modified": null,
+      "date_published": null,
+      "final_url": "https://aplacebeyond.place/",
+      "h1_count": 0,
+      "html_bytes": 6357,
+      "html_lang": "en",
+      "inbound_link_count": 0,
+      "internal_link_count": 0,
+      "jsonld_types": [
+        "WebSite",
+        "MusicRecording"
+      ],
+      "meta_description": "A PLACE BEYOND is an immersive ambient music experience featuring cinematic visuals and the original track Blackmoon.",
+      "noindex": false,
+      "redirect_hops": 0,
+      "redirecting_internal_links": [],
+      "sitemap_lastmod": null,
+      "status": 200,
+      "title": "A PLACE BEYOND | Ambient Music Experience",
+      "ttfb_ms": 150
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-11",
+  "action": "repair",
+  "target": "https://aplacebeyond.place/",
+  "file": "index.html",
+  "checked": {
+    "before": "health_diff 2026-09-12 fingerprint: h1_count=0 on homepage",
+    "evidence": ".seo/health/2026-09-12.json",
+    "test": "health_diff.py h1-count rule; re-run against live pending deploy"
+  },
+  "after": "added <h1 class=\"visually-hidden\">A Place Beyond | Ambient Music Experience</h1> as first element of <body>, with .visually-hidden CSS (clip-path inset(50%)) so the visual design is unchanged",
+  "verified": "local parse: exactly 1 h1 tag; truth_check.py: 0 contradictions after edit (2 missing remain — composer credit and book relationship are the deferred Phase 1 copy, NY-3)",
+  "live_verification": "pending deploy"
+}

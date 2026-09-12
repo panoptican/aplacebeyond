@@ -1,0 +1,7 @@
+{
+  "baseline": { "domain_rating": null, "source": "none", "as_of": "2026-09-11" },
+  "difficulty": { "playable_bucket": "easy", "kd_source": "none", "derived_at": "2026-09-11", "evidence": ["no GSC rankings yet; brand-new single-page site"] },
+  "gsc_baseline": { "clicks_90d": null, "impressions_90d": null, "avg_position": null, "as_of": null },
+  "clusters": {},
+  "candidates": []
+}

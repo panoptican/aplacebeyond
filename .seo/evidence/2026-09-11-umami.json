@@ -1,0 +1,20 @@
+{
+  "action": "install Umami analytics script",
+  "date": "2026-09-11",
+  "answers_consumed": {
+    "NY-1": "done — verified/connected by user",
+    "NY-4": "nobody can — drop offpage brief",
+    "NY-6": "uses Umami — script installed in index.html"
+  },
+  "change": {
+    "file": "index.html",
+    "added": "<script defer src=\"https://analytics.spidleweb.net/script.js\" data-website-id=\"c3ea9904-819a-438d-b822-db6eb63d431c\"></script>",
+    "location": "head, after twitter meta, before JSON-LD"
+  },
+  "notes": [
+    "Self-hosted Umami instance on analytics.spidleweb.net — no third-party analytics provider, aligns with site privacy posture.",
+    "Does not affect robots.txt (visitor-browser fetch, not a crawler).",
+    "Gives referral sources (including AI/answer-engine referrers where available) once deployed."
+  ],
+  "live_verification": "pending deploy (git.mode none — no commit; Cloudflare Pages deploy workflow file is deleted in the pre-existing dirty tree)"
+}

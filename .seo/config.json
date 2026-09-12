@@ -1,0 +1,246 @@
+{
+  "_comment": "Merged config for /seo. Written once by references/foundation.md §1 and never overwritten. null means 'not detected yet, fill on first need'.",
+  "site": {
+    "domain": "https://aplacebeyond.place",
+    "name": "A Place Beyond",
+    "aliases": [
+      "A PLACE BEYOND",
+      "APB"
+    ],
+    "_comment_aliases": "Brand name variants an answer engine or a mention search might use, including the misspelling you keep seeing.",
+    "locale": {
+      "country": "United States",
+      "language": "en"
+    },
+    "repo_kind": "marketing",
+    "sitemap_url": "https://aplacebeyond.place/sitemap.xml",
+    "_comment_sitemap_url": "The live sitemap (or sitemap index) URL. scripts/health_diff.py --sitemap reads this every run; stack.sitemap_path is the file that generates it.",
+    "brand_regex": "a\\s+place\\s+beyond",
+    "_comment_brand_regex": "'A Place Beyond' is a generic phrase (cf. 'The Place Beyond the Pines'). Case-insensitive phrase match keeps the brand split honest; brand_split.py builds the full pattern from this plus site.name and site.aliases."
+  },
+  "stack": {
+    "kind": "html",
+    "marketing_controller": null,
+    "pages_dir": null,
+    "data_dir": null,
+    "routes_file": null,
+    "sitemap_path": "sitemap.xml",
+    "robots_path": "robots.txt",
+    "llms_txt_path": null,
+    "header_component": null,
+    "footer_component": null,
+    "content_store": {
+      "type": "files",
+      "platform": null,
+      "base_url": null,
+      "read_method": "read repo files",
+      "write_method": "edit repo files",
+      "model_or_collection": null,
+      "body_format": "html",
+      "auth_note": null
+    },
+    "content_dir": ".",
+    "content_layout": "single-page static site; index.html is the only page",
+    "output_url_prefix": "",
+    "cms": null,
+    "figure_style": {
+      "_comment": "Auto-detected visual recon (references/visuals.md). Never interview the user about this.",
+      "chart_component": "none",
+      "tokens": "--page-bg: #0B0902; --text-muted: #959588; --radius-md: 8px",
+      "dark_mode": "none",
+      "notes": "Always-dark design; near-black background, muted warm-grey text, 8px radius on links."
+    }
+  },
+  "gsc": {
+    "site_url": null,
+    "_comment": "Not verified in any Google account accessible to this host yet. User said they will connect Search Console — see .seo/needs-you.md NY-1."
+  },
+  "bing": {
+    "api_key_env": null,
+    "site_url": "https://aplacebeyond.place",
+    "_comment": "Optional. Bing Webmaster not connected."
+  },
+  "openseo": {
+    "project_id": null,
+    "tracker_id": null
+  },
+  "ga4": {
+    "property_id": null
+  },
+  "competitors": [
+    {
+      "name": "Inside the Castle",
+      "domain": "insidethecastle.org",
+      "tier": "niche",
+      "why": "Reference point named by the owner: the press that publishes A Place Beyond. Their site is the model for a small-press book web presence.",
+      "sitemap_url": null
+    },
+    {
+      "name": "Asterism Books",
+      "domain": "asterismbooks.com",
+      "tier": "niche",
+      "why": "Retailer/distributor that sells the book; its product page is the highest-authority page about the book and the natural inbound link source.",
+      "sitemap_url": null
+    }
+  ],
+  "content_surfaces": [
+    "."
+  ],
+  "_comment_content_surfaces": "Where public pages live in this repo. Single-page static site: only index.html at the root.",
+  "priority_pages": [
+    "https://aplacebeyond.place/"
+  ],
+  "crawl_hubs": [
+    "/"
+  ],
+  "_comment_crawl_hubs": "Single-page site; the homepage is the only page Google can crawl. GSC not connected, so this is inferred, not derived from last_crawled.",
+  "authority": {
+    "dr": null,
+    "dr_source": "none",
+    "kd_ceiling": "easy",
+    "kd_source": "none",
+    "last_read": null,
+    "_comment": "Brand-new single-page site with no rankings. kd_ceiling starts at easy (no GSC page-1 positions to derive from). Re-derive once GSC is connected."
+  },
+  "budget": {
+    "per_run_usd": 2.0,
+    "ai_panel_cadence_days": 14,
+    "health_diff_cadence_days": 1,
+    "claim_reverify_sample": 3,
+    "_comment": "Unattended runs stay under per_run_usd. Cost never overrides a quality gate.",
+    "link_check_cadence_days": 7
+  },
+  "select": {
+    "floor": 9,
+    "_comment": "Below this rubric score (of a possible 20) the best unblocked candidate loses to measure-only. See references/select.md §7."
+  },
+  "paths": {
+    "roadmap": ".seo/roadmap.md",
+    "ledger": ".seo/content-ledger.md",
+    "truth": ".seo/truth.md",
+    "needs_you": ".seo/needs-you.md",
+    "runs": ".seo/runs/",
+    "health": ".seo/health/",
+    "briefs": ".seo/briefs/"
+  },
+  "logs": {
+    "path": null,
+    "format": "none",
+    "_comment": "No server/CDN logs in the repo (Cloudflare Pages static site). AI-crawler evidence runs on web search + Search Console alone; any report must say so."
+  },
+  "tools_detected": {
+    "gsc": false,
+    "bing_webmaster": false,
+    "dfs": false,
+    "openseo": false,
+    "answer_engine_data": false,
+    "brand_tracking": false,
+    "crawl_audit": false,
+    "python3": true,
+    "ga4": false,
+    "psi": false,
+    "logs": false,
+    "community_search": false,
+    "social_posting": false,
+    "browser": false,
+    "git": true
+  },
+  "tools_declined": [],
+  "cache": {
+    "domain_rating": {
+      "value": null,
+      "read": null
+    },
+    "keyword_volumes": {
+      "read": null
+    },
+    "competitor_gap": {
+      "read": null
+    },
+    "ai_panel": {
+      "read": null
+    },
+    "health_fingerprint": {
+      "read": null
+    }
+  },
+  "sampling": {
+    "p1": {
+      "variants": 6,
+      "platforms": 4,
+      "n": 3
+    },
+    "p2": {
+      "variants": 3,
+      "platforms": 2,
+      "n": 2
+    },
+    "p3": {
+      "variants": 1,
+      "platforms": 1,
+      "n": 1
+    }
+  },
+  "initialized": "2026-09-11",
+  "radar": {
+    "_comment": "Demand radar seeds: topic phrases in the audience's own words (not product names) and the communities where the ideal customer talks.",
+    "seeds": [
+      "ambient music for reading",
+      "asemic writing",
+      "visual poetry",
+      "experimental literature",
+      "A Place Beyond book",
+      "Garett Strickland",
+      "Inside the Castle press",
+      "Blackmoon track",
+      "music to listen to while reading"
+    ],
+    "communities": [
+      "reddit.com/r/WeirdLit",
+      "reddit.com/r/ambientmusic",
+      "reddit.com/r/TrueLit"
+    ],
+    "cadence_days": 7
+  },
+  "speed": {
+    "psi_api_key_env": "PSI_API_KEY",
+    "top_pages": 1,
+    "cadence_days": 7
+  },
+  "cadence": {
+    "gsc_hours": 20,
+    "health_hours": 6,
+    "link_check_hours": 20,
+    "radar_free_hours": 20,
+    "bing_hours": 20,
+    "outcomes_hours": 20,
+    "competitor_hours": 168,
+    "serp_hours": 168,
+    "backlinks_hours": 168,
+    "link_opportunities_hours": 168,
+    "seasonality_hours": 720,
+    "site_search_hours": 168
+  },
+  "git": {
+    "_comment": "How a run ends. none: show the diff. pr: commit, push, open a PR with the run record as body, never merge. push_after_commit: user instruction 2026-09-11 — commit and push to main after every SEO improvement (main deploys; user takes deploy authority).",
+    "mode": "commit",
+    "push_after_commit": true
+  },
+  "repo": {
+    "_comment": "Product-change panel. This repo IS the site: any commit touching these files changed what the public sees.",
+    "watch_paths": [
+      "index.html",
+      "robots.txt",
+      "sitemap.xml",
+      "*.mp3",
+      "*.mp4"
+    ]
+  },
+  "serp": {
+    "top_queries": 20
+  },
+  "distribute": {
+    "social_skill": null,
+    "window_days": 14
+  }
+}

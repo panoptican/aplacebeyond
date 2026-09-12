@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-11",
+  "action": "repair",
+  "target": "https://aplacebeyond.place/robots.txt",
+  "file": "robots.txt",
+  "checked": {
+    "before": "curl of live robots.txt (2026-09-11): serves Cloudflare Managed Content with Content-Signal search=yes,ai-train=no,use=reference and Disallow for GPTBot, ClaudeBot, Google-Extended, CCBot, Bytespider, Applebot-Extended, meta-externalagent, Amazonbot; repo robots.txt (what deploys) contained only 'User-agent: * Allow: /' + Sitemap",
+    "evidence": "curl output in run record 2026-09-11-2109"
+  },
+  "after": "repo robots.txt now groups GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, Perplexity-User, ClaudeBot, Claude-Web, anthropic-ai, Google-Extended, Applebot-Extended, CCBot, cohere-ai, Amazonbot, meta-externalagent, Bytespider, Diffbot under Allow: /. These appear after the Cloudflare managed block on the live file and override it per robots.txt specificity.",
+  "caveats": "Google-Extended governs Gemini grounding and can imply training use (Google does not read Content-Signal); the ai-train=no reservation from Cloudflare remains but vendor honoring varies. Decision was NY-5, answered 'allow citing crawlers, keep training reserved' at the 2026-09-11 checkpoint.",
+  "live_verification": "pending deploy"
+}

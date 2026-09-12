@@ -1,0 +1,39 @@
+[
+  {
+    "claim": "Canonical points at the live domain",
+    "paths": ["index.html"],
+    "must_match": ["https://aplacebeyond.place/"],
+    "must_not_match": ["localhost", "example.com"]
+  },
+  {
+    "claim": "Track is credited to its composer",
+    "paths": ["index.html"],
+    "must_match": ["Garett Strickland"],
+    "must_not_match": []
+  },
+  {
+    "claim": "Site states its relationship to the book",
+    "paths": ["index.html"],
+    "flags": "i",
+    "must_match": ["(?:the book|book by garett strickland|inside the castle|asterism)"],
+    "must_not_match": []
+  },
+  {
+    "claim": "No pricing or commerce on-site",
+    "paths": ["index.html"],
+    "must_match": [],
+    "must_not_match": ["\\$\\d+", "cart", "checkout"]
+  },
+  {
+    "claim": "Audio is not downloadable",
+    "paths": ["index.html"],
+    "must_match": ["controlsList=\"nodownload\""],
+    "must_not_match": []
+  },
+  {
+    "claim": "Sitemap covers only the live homepage",
+    "paths": ["sitemap.xml"],
+    "must_match": ["https://aplacebeyond.place/"],
+    "must_not_match": ["example.com"]
+  }
+]
