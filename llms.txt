@@ -1,0 +1,22 @@
+# A Place Beyond
+
+> The audio accompaniment to the book *A Place Beyond* by Garett Strickland — an immersive ambient music experience for reading.
+
+## About
+
+- Site: A PLACE BEYOND | Ambient Music Experience
+- Purpose: audio accompaniment to the book *A Place Beyond* (Inside the Castle, ISBN 9798987083895)
+- Book: *A Place Beyond* by Garett Strickland, published by Inside the Castle
+- Music: the original track "Blackmoon," composed by Garett Strickland
+- Book designer: Mike Corrao
+- Where to buy the book: https://asterismbooks.com/product/a-place-beyond
+- Publisher: https://insidethecastle.org
+
+## Primary page
+
+- [Home](https://aplacebeyond.place/): a single-page immersive ambient experience — looping generative visuals and the original track Blackmoon, playable in the browser.
+
+## Optional
+
+- [The book at Asterism Books](https://asterismbooks.com/product/a-place-beyond): full book details and ordering
+- [Inside the Castle (publisher)](https://insidethecastle.org/)

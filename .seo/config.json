@@ -1,5 +1,5 @@
 {
-  "_comment": "Merged config for /seo. Written once by references/foundation.md §1 and never overwritten. null means 'not detected yet, fill on first need'.",
+  "_comment": "Merged config for /seo. Written once by references/foundation.md \u00a71 and never overwritten. null means 'not detected yet, fill on first need'.",
   "site": {
     "domain": "https://aplacebeyond.place",
     "name": "A Place Beyond",
@@ -53,7 +53,7 @@
   },
   "gsc": {
     "site_url": null,
-    "_comment": "Not verified in any Google account accessible to this host yet. User said they will connect Search Console — see .seo/needs-you.md NY-1."
+    "_comment": "Not verified in any Google account accessible to this host yet. User said they will connect Search Console \u2014 see .seo/needs-you.md NY-1."
   },
   "bing": {
     "api_key_env": null,
@@ -112,7 +112,7 @@
   },
   "select": {
     "floor": 9,
-    "_comment": "Below this rubric score (of a possible 20) the best unblocked candidate loses to measure-only. See references/select.md §7."
+    "_comment": "Below this rubric score (of a possible 20) the best unblocked candidate loses to measure-only. See references/select.md \u00a77."
   },
   "paths": {
     "roadmap": ".seo/roadmap.md",
@@ -222,7 +222,7 @@
     "site_search_hours": 168
   },
   "git": {
-    "_comment": "How a run ends. none: show the diff. pr: commit, push, open a PR with the run record as body, never merge. push_after_commit: user instruction 2026-09-11 — commit and push to main after every SEO improvement (main deploys; user takes deploy authority).",
+    "_comment": "How a run ends. none: show the diff. pr: commit, push, open a PR with the run record as body, never merge. push_after_commit: user instruction 2026-09-11 \u2014 commit and push to main after every SEO improvement (main deploys; user takes deploy authority).",
     "mode": "commit",
     "push_after_commit": true
   },
@@ -233,7 +233,8 @@
       "robots.txt",
       "sitemap.xml",
       "*.mp3",
-      "*.mp4"
+      "*.mp4",
+      "llms.txt"
     ]
   },
   "serp": {

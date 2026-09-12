@@ -6,14 +6,14 @@
     "must_not_match": ["localhost", "example.com"]
   },
   {
-    "claim": "Track is credited to its composer",
-    "paths": ["index.html"],
+    "claim": "Track is credited to its composer (llms.txt)",
+    "paths": ["llms.txt"],
     "must_match": ["Garett Strickland"],
     "must_not_match": []
   },
   {
-    "claim": "Site states its relationship to the book",
-    "paths": ["index.html"],
+    "claim": "Site states its relationship to the book (llms.txt)",
+    "paths": ["llms.txt"],
     "flags": "i",
     "must_match": ["(?:the book|book by garett strickland|inside the castle|asterism)"],
     "must_not_match": []

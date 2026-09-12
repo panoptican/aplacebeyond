@@ -9,7 +9,7 @@
 | # | Phase | Pattern | Status | PR |
 |---|---|---|---|---|
 | 0 | Technical foundations | Setup | in_progress | – |
-| 1 | State the book relationship on-page | fix (correct) | pending | – |
+| 1 | State the book relationship on-page | fix (correct) | dropped (user 2026-09-11: no on-page copy work, ever) | – |
 | 2 | Inbound links: Asterism product page + publisher | offpage | dropped (NY-4: nobody can edit those pages) | – |
 
 **Conventions:**
@@ -105,16 +105,9 @@ No keyword tools connected. Seed terms from the owner interview (2026-09-11) —
 - [ ] `tech_audit.py` returns 0 critical findings
 - [ ] Sitemap submitted in GSC (manual, blocked on NY-1)
 
-### Phase 1 — State the book relationship on-page
+### Phase 1 — State the book relationship on-page — DROPPED
 
-**Why:** the site currently presents as a generic ambient page. Engines (and readers who land from search) cannot learn that this is the audio accompaniment to the book, who made it, or where to buy the book. That is the whole relevance story.
-
-**Scope (draft — the fix lane owns the details):**
-1. Title/meta: mention the book and author
-2. On-page copy (sparse, matching voice): book relationship, composer credit, artist/author line, link out to the Asterism product page
-3. Extend JSON-LD: MusicRecording byArtist Garett Strickland; WebSite description states the book relationship
-
-**Verification:** `truth_check.py` passes (composer credited, book relationship stated).
+**Dropped 2026-09-11 (user):** no on-page copy work, ever. The homepage stays deliberately wordless. Attribution (book relationship, composer credit) moved to `llms.txt` instead (approved same day). The dropped scope was: title/meta book mentions, on-page copy, JSON-LD artist/description changes.
 
 ### Phase 2 — Inbound links — DROPPED
 

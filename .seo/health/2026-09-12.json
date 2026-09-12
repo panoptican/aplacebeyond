@@ -1,6 +1,6 @@
 {
   "base_url": "https://aplacebeyond.place",
-  "generated": "2026-09-12T02:01:01+00:00",
+  "generated": "2026-09-12T03:20:57+00:00",
   "link_check": {
     "broken": 0,
     "redirecting": 0,
@@ -8,16 +8,16 @@
   },
   "pages": {
     "https://aplacebeyond.place/": {
-      "body_text": "A PLACE BEYOND | Ambient Music Experience Your browser does not support the video tag. Your browser does not support the audio element.",
-      "body_words": 23,
+      "body_text": "A PLACE BEYOND | Ambient Music Experience A Place Beyond | Ambient Music Experience Your browser does not support the video tag. Your browser does not support the audio element.",
+      "body_words": 30,
       "broken_internal_links": [],
       "canonical": "https://aplacebeyond.place/",
-      "content_hash": "390f18a80f7b206336803d2db8151b9445b2ab8b",
+      "content_hash": "2f55155400c1ad7e0d411a5bdb8355446a847334",
       "date_modified": null,
       "date_published": null,
       "final_url": "https://aplacebeyond.place/",
-      "h1_count": 0,
-      "html_bytes": 6357,
+      "h1_count": 1,
+      "html_bytes": 6891,
       "html_lang": "en",
       "inbound_link_count": 0,
       "internal_link_count": 0,
@@ -32,7 +32,7 @@
       "sitemap_lastmod": null,
       "status": 200,
       "title": "A PLACE BEYOND | Ambient Music Experience",
-      "ttfb_ms": 150
+      "ttfb_ms": 163
     }
   }
 }
