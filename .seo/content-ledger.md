@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-02-18 | A Place Beyond (homepage) | resource | `/` | A Place Beyond | — | easy | none | n/a | — | 17cf9a4 |
 | 2026-09-11 | repair: homepage h1 | repair | `/` | — | — | — | health_diff 2026-09-12: h1_count=0 → added visually-hidden h1 | n/a | — | uncommitted |
-| 2026-09-11 | repair: robots.txt AI-crawler access | repair | /robots.txt | — | — | — | live robots.txt (Cloudflare Managed Content) disallowed GPTBot/ClaudeBot/Google-Extended/CCBot/Bytespider/Applebot-Extended/meta-externalagent/Amazonbot → re-allowed 16 answer-engine crawlers; ai-train stays reserved | n/a | — | uncommitted |
+| 2026-09-11 | repair: robots.txt explicit AI-bot block | repair | /robots.txt | — | — | — | live robots.txt (Cloudflare Managed Content) disallowed GPTBot/ClaudeBot/Google-Extended/CCBot/Bytespider/Applebot-Extended/meta-externalagent/Amazonbot; first pass re-allowed 16 answer-engine crawlers, then user decided "block bots" → flipped to explicit Disallow so repo + Cloudflare agree; search engines stay allowed; ai-train stays reserved | n/a | — | uncommitted |
 | 2026-09-11 | instrumentation: Umami analytics script | tool | `/` | — | — | — | NY-6: user uses Umami (self-hosted, analytics.spidleweb.net); defer script + site id added to index.html head | n/a | — | uncommitted |
 
 <!-- Append one row per piece at Step 5. Type ∈ guide | how-to | listicle | definition | comparison | data-study | resource | opinion | case-study | tool -->
